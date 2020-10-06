@@ -9,12 +9,12 @@ def find_min_in_nested_arrays(src)
 
   row_index = 0
 
-  smallest_numbers = [1000, 1000, 1000]
+  smallest_numbers = []
 
-  while row_index < src.length
+  while row_index < src.count
     element_index = 0
-    while element_index < src[row_index].length
-      if src[row_index][element_index] < smallest_numbers[row_index]
+    while element_index < src[row_index].count
+      if smallest_numbers[row_index] = nil
         smallest_numbers << src[row_index][element_index]
       end
       element_index += 1
